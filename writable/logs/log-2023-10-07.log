@@ -1,0 +1,387 @@
+ERROR - 2023-10-07 23:12:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:12:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*) form 
+        users')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:12:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:12:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*) form 
+        users')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:12:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'form categories as c join posts as p on p.category
+            = c.id group ...' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.*, c.c...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.*, c.c...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.*, c.c...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(54): CodeIgniter\Database\BaseConnection->query('select p.*, c.c...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:12:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'form categories as c join posts as p on p.category
+            = c.id group ...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(54): CodeIgniter\Database\BaseConnection->query('select p.*, c.category as ccategory,
+            count(*) as ppc form categories as c join posts as p on p.category
+            = c.id group by category  order by category order by category')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:12:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:12:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*) form 
+        users')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:12:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:12:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'users' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(28): CodeIgniter\Database\BaseConnection->query('select count(*) form 
+        users')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:41:22 --> Class "Config\Datbase" not found
+in APPPATH\Controllers\PostController.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:41:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(80): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:41:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(80): CodeIgniter\Database\BaseConnection->query('select count(*) form
+        categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:41:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(80): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:41:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(80): CodeIgniter\Database\BaseConnection->query('select count(*) form
+        categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:41:30 --> Class "Config\Datbase" not found
+in APPPATH\Controllers\PostController.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:45:25 --> Undefined variable $totalUsers
+in APPPATH\Controllers\PostController.php on line 66.
+ 1 APPPATH\Controllers\PostController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\app\\Controllers\\PostController.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:45:55 --> Undefined variable $totalUsers
+in APPPATH\Controllers\PostController.php on line 66.
+ 1 APPPATH\Controllers\PostController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\app\\Controllers\\PostController.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:46:54 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:47:23 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:47:35 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:47:39 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:48:57 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:50:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'form categories as c join posts as p on p.category
+            = c.id group ...' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.*, c.c...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.*, c.c...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.*, c.c...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(105): CodeIgniter\Database\BaseConnection->query('select p.*, c.c...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:50:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'form categories as c join posts as p on p.category
+            = c.id group ...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(105): CodeIgniter\Database\BaseConnection->query('select p.*, c.category as ccategory,
+            count(*) as ppc form categories as c join posts as p on p.category
+            = c.id group by category  order by category order by category')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:50:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:50:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*) form
+        categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:50:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:50:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*) form
+        categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:50:20 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:50:21 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:53:44 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(70): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:53:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:53:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*) form
+        categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-07 23:53:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-07 23:53:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'categories' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('select count(*) form
+        categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-10-07 23:59:06 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(30): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')

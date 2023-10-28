@@ -1,0 +1,143 @@
+CRITICAL - 2023-09-20 14:36:47 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Seeds\CategoriesSeeder.php on line 79.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-09-20 14:39:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:54:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:57:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:57:37 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:58:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:58:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:59:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:59:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 14:59:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-20 15:03:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ze`.`comments`, CONSTRAINT `post1` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\CommentsSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\CommentsSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}

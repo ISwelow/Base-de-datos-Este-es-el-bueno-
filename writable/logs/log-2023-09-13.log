@@ -1,0 +1,14 @@
+ERROR - 2023-09-13 14:36:07 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Database\Seeds\ProductSeeder.php(43): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}

@@ -1,0 +1,10 @@
+CRITICAL - 2023-10-28 04:58:17 --> Invalid file: "baseDatos/mostrar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('baseDatos/mostrar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('baseDatos/mostrar', [], true)
+ 3 APPPATH\Controllers\ExportarBase.php(13): view('baseDatos/mostrar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ExportarBase->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExportarBase))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')

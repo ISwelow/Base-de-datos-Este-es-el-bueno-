@@ -1,0 +1,25 @@
+CRITICAL - 2023-09-27 15:18:55 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\UserController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-09-27 15:19:01 --> Undefined variable $dd
+in APPPATH\Controllers\UserController.php on line 43.
+ 1 APPPATH\Controllers\UserController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dd', 'C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\app\\Controllers\\UserController.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->usuarios2()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+CRITICAL - 2023-09-27 15:33:35 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\UserController.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\app\\Controllers\\UserController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\UserController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')

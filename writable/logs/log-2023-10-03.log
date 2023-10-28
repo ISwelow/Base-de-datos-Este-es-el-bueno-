@@ -1,0 +1,81 @@
+CRITICAL - 2023-10-03 14:53:04 --> Undefined variable $posts
+in APPPATH\Controllers\PostController.php on line 14.
+ 1 APPPATH\Controllers\PostController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\app\\Controllers\\PostController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ej01()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-03 15:26:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as
+        categories as c right join posts as p on p.category as =c.id left...' at line 1 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select c.catego...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select c.catego...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select c.catego...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(11): CodeIgniter\Database\BaseConnection->query('select c.catego...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ej01()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-03 15:26:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as
+        categories as c right join posts as p on p.category as =c.id left...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(11): CodeIgniter\Database\BaseConnection->query('select c.category, p.id, p.title, p.username from as
+        categories as c right join posts as p on p.category as =c.id left join users as u on u.id = p.autor limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ej01()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-03 15:43:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as
+        categories as c right join posts as p on p.category as =c.id left...' at line 1 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select c.catego...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select c.catego...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select c.catego...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(11): CodeIgniter\Database\BaseConnection->query('select c.catego...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ej01()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-03 15:43:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as
+        categories as c right join posts as p on p.category as =c.id left...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(11): CodeIgniter\Database\BaseConnection->query('select c.category, p.id, p.title, p.username from as
+        categories as c right join posts as p on p.category as =c.id left join
+        users as u on u.id = p.autor where p.created_at between "2023/01/01" and
+        "2023/12/31" limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ej01()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
+ERROR - 2023-10-03 15:43:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as
+        categories as c right join posts as p on p.category as =c.id left...' at line 1 in C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\MySQLi\Connection.php(306): mysqli->query('select c.catego...', 0)
+#1 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select c.catego...')
+#2 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select c.catego...')
+#3 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\app\Controllers\PostController.php(11): CodeIgniter\Database\BaseConnection->query('select c.catego...')
+#4 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(919): App\Controllers\PostController->ej01()
+#5 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\jj190\OneDrive\Documentos\codeigniter4-framework-v4.4.1-0-g844616e\codeigniter4-framework-844616e\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\...')
+#9 {main}
+CRITICAL - 2023-10-03 15:43:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as
+        categories as c right join posts as p on p.category as =c.id left...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(11): CodeIgniter\Database\BaseConnection->query('select c.category, p.id, p.title, p.username from as
+        categories as c right join posts as p on p.category as =c.id left join
+        users as u on u.id = p.autor where p.created_at between "2023/01/01" and
+        "2023/12/31" limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ej01()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\jj190\\OneDrive\\Documentos\\codeigniter4-framework-v4.4.1-0-g844616e\\codeigniter4-framework-844616e\\public\\index.php')
